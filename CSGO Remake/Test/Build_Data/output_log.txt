@@ -1,0 +1,677 @@
+Mono path[0] = 'C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Test/Build_Data/Managed'
+Mono config path = 'C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Test/Build_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Test/Build_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55485
+Multi-casting "[IP] 192.168.56.1 [Port] 55485 [Flags] 2 [Guid] 453475903 [EditorId] 362314081 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-QNOHM59) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55485]
+PlayerConnection already initialized - listening to [0.0.0.0:55485]
+Player data archive not found at `C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Test/Build_Data/data.unity3d`, using local filesystem
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 620 (ID=0x5916)
+    Vendor:   Intel
+    VRAM:     1123 MB
+    Driver:   25.20.100.6373
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Test\Build_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.400 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.267100 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 3a4c -> priority: 1 
+  Thread -> id: 1be0 -> priority: 1 
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+6.462338
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+4.037217
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+5.624041
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+5.624002
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+5.623981
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+5.623957
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+5.62394
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+5.422991
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+2.609776
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+0.2345951
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+0.2368501
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+0.3088598
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+0.5423707
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+0.6948857
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:105)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 105)
+
+0.723626
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:106)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 106)
+
+Collider
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShootGun.Shoot () [0x000d3] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:85 
+  at ShootGun.Update () [0x00074] in C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49 
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 85)
+
+floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ShootGun:Shoot() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:110)
+ShootGun:Update() (at C:\Users\Louis.DESKTOP-QNOHM59\Documents\Projects\CSGO Remake\Assets\Scripts\ShootGun.cs:49)
+ 
+(Filename: C:/Users/Louis.DESKTOP-QNOHM59/Documents/Projects/CSGO Remake/Assets/Scripts/ShootGun.cs Line: 110)
+
