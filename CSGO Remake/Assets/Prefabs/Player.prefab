@@ -29,6 +29,7 @@ GameObject:
   - component: {fileID: 114746958034073916}
   - component: {fileID: 136809683090782500}
   - component: {fileID: 114086785885228876}
+  - component: {fileID: 114557553894153072}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -572,6 +573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
+  killer: {fileID: 0}
 --- !u!114 &114162837945793148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -588,6 +590,7 @@ MonoBehaviour:
     damage: 20
     range: 100
   sceneCam: {fileID: 0}
+  hp: {fileID: 0}
   cam: {fileID: 20729810735140750}
   mask:
     serializedVersion: 2
@@ -727,6 +730,17 @@ MonoBehaviour:
   isGrounded: 0
   jumpForce: 10
   player: {fileID: 1042823091380082}
+--- !u!114 &114557553894153072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1042823091380082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407205dcb6dbe144979cbf1db64347f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114593885363646644
 MonoBehaviour:
   m_ObjectHideFlags: 1

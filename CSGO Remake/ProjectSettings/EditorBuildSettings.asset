@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MultiPlayer Test/Shot Testing/DMG Test 3.unity
     guid: a8d08d3d8e54a0d4cb2a70ade912fac3
+  - enabled: 1
+    path: Assets/Scenes/MultiPlayer Test/Shot Testing/DMG Test 4.unity
+    guid: d219c05525d741e44b39f7ec50f6f8a9

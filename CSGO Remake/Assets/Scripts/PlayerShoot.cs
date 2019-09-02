@@ -57,7 +57,7 @@ public class PlayerShoot : NetworkBehaviour {
         {
             if(hit.collider.tag == PTag)
             {
-                CmdPlayerShot(hit.collider.name);
+                CmdPlayerShot(hit.collider.name, weapon.damage);
             }
 
             Debug.Log(hit.distance + hit.collider.name);    
@@ -65,20 +65,14 @@ public class PlayerShoot : NetworkBehaviour {
     }
 
     [Command]
-   public void CmdPlayerShot(string ID)
+    public void CmdPlayerShot(string _PlayerID, int dmg)
     {
-        Debug.Log(ID + "Has Been Shot!");
 
-        GameObject otherPlayer = GameObject.Find(ID);
-        otherPlayer.gameObject.GetComponent<UniversalHP>().hp -= weapon.damage;
+        dmg = weapon.damage;
+        Debug.Log(_PlayerID + "Has Been Shot!");
 
-        if(otherPlayer.GetComponent<UniversalHP>().hp <= 0)
-        {
-           hp.KillPlayer(otherPlayer);
-
-        }
-
-
+        player _Player = GameManager.GetPlayer(_PlayerID);
+        _Player.RpcTakeDamage(dmg);
     }
 
     

@@ -2,10 +2,12 @@
 using UnityEngine.Networking;
 using UnityStandardAssets.Cameras;
 
+
+[RequireComponent(typeof(player))]
 public class PlayerSetup : NetworkBehaviour {
 
     [SerializeField]
-    public Behaviour[] Disable;
+    private Behaviour[] Disable;
     [SerializeField]
     Camera sceneCam;
     [SerializeField]
@@ -14,7 +16,6 @@ public class PlayerSetup : NetworkBehaviour {
 
     private void Start()
     {
-        GetComponent<FreeLookCam>().enabled = false;
         if (!isLocalPlayer)
         {
             DisableComponents();
@@ -29,21 +30,27 @@ public class PlayerSetup : NetworkBehaviour {
             }
         }
 
-        RegisterPlayer();
-        
+        GetComponent<player>().Setup();
+
     }
 
-    void RegisterPlayer()
+    public override void OnStartClient()
     {
-        string ID = "Player" + GetComponent<NetworkIdentity>().netId;
-        transform.name = ID;
+        base.OnStartClient();
+
+        string _netID = GetComponent<NetworkIdentity>().netId.ToString();
+        player _player = GetComponent<player>();
+
+        GameManager.RegisterPlayer(_netID, _player);
     }
+
 
     private void OnDisable()
     {
         if (sceneCam != null)
         {
             sceneCam.gameObject.SetActive(true);
+            GameManager.UnRegisterPlayer(transform.name);
         }
     }
 
