@@ -15,7 +15,6 @@ public class player : NetworkBehaviour {
 
     [SerializeField]
     private int maxHealth = 100;
-
     [SerializeField]
     private Behaviour[] disableOnDeath;
     private bool[] wasEnabled;
@@ -32,7 +31,6 @@ public class player : NetworkBehaviour {
         }
         SetDefaults();
     }
-
 
     [ClientRpc]
     public void RpcTakeDamage(int _amount)
@@ -53,7 +51,6 @@ public class player : NetworkBehaviour {
     private void Die()
     {
         IsDead = true;
-
         for (int i = 0; i < disableOnDeath.Length; i++)
         {
             disableOnDeath[i].enabled = false;
@@ -65,7 +62,6 @@ public class player : NetworkBehaviour {
         {
             col.enabled = false;
         }
-
 
        StartCoroutine(Respawn());
     }
@@ -95,7 +91,5 @@ public class player : NetworkBehaviour {
         Collider _col = GetComponent<Collider>();
 
             _col.enabled = true;
-     
-        
     }
 }

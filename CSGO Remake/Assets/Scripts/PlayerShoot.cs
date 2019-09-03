@@ -27,28 +27,14 @@ public class PlayerShoot : NetworkBehaviour {
     private void Update()
     {
         currentWeapon = WeaponManager.getCurrentWeapon();
+        checkFireRate();
+        checkMouseLock();
+        
+    }
 
-        if (Input.GetMouseButtonDown(0)) {
-            if (currentWeapon.fireRate <= 0)
-            {
-                Shoot();
-            }
-            else
-            {
-                    InvokeRepeating("Shoot", 0f, 1f / currentWeapon.fireRate);   
-            }
-        }
-
-        else if (Input.GetMouseButtonUp(0))
-        {
-            CancelInvoke("Shoot");
-        }
-            
-            
-            
-          
+    private void checkMouseLock()
+    {
         if (locked)
-
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -66,25 +52,36 @@ public class PlayerShoot : NetworkBehaviour {
         }
     }
 
-    
+    private void checkFireRate()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (currentWeapon.fireRate <= 0)
+            {
+                Shoot();
+            }
+            else
+            {
+                InvokeRepeating("Shoot", 0f, 1f / currentWeapon.fireRate);
+            }
+        }
 
+        else if (Input.GetMouseButtonUp(0))
+        {
+            CancelInvoke("Shoot");
+        }
+    }
 
-
-    [Client] 
+    [Client]
     void Shoot()
     {
-
-        Debug.Log("SHOOT!");
-
         RaycastHit hit;
-        if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, currentWeapon.range, mask))
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, currentWeapon.range, mask))
         {
-            if(hit.collider.tag == PTag)
+            if (hit.collider.tag == PTag)
             {
                 CmdPlayerShot(hit.collider.name, currentWeapon.damage);
             }
-
-            Debug.Log(hit.distance + hit.collider.name);    
         }
     }
 
@@ -98,6 +95,4 @@ public class PlayerShoot : NetworkBehaviour {
         player _Player = GameManager.GetPlayer(_PlayerID);
         _Player.RpcTakeDamage(dmg);
     }
-
-    
 }

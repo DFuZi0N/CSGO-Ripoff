@@ -19,12 +19,10 @@ public class WeaponManager : NetworkBehaviour {
         // In future, add weapon selection GUI		
 	}
 
-
    public PlayerWeapons getCurrentWeapon()
     {
         return currentWeapon;
     }
-
 
     void equipWeapon(PlayerWeapons next)
     {
