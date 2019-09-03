@@ -5,14 +5,10 @@ using UnityStandardAssets.Cameras;
 
 [RequireComponent(typeof(player))]
 public class PlayerSetup : NetworkBehaviour {
-
     [SerializeField]
     private Behaviour[] Disable;
     [SerializeField]
-    Camera sceneCam;
-    [SerializeField]
     string remoteLayerName = "RemotePlayer";
-
 
     private void Start()
     {
@@ -23,15 +19,13 @@ public class PlayerSetup : NetworkBehaviour {
         }
         else
         {
-            sceneCam = Camera.main;
-            if (sceneCam != null)
+            
+            if (Camera.main.gameObject != null)
             {
-                sceneCam.gameObject.SetActive(false);
+                Camera.main.gameObject.SetActive(false);
             }
         }
-
         GetComponent<player>().Setup();
-
     }
 
     public override void OnStartClient()
@@ -40,41 +34,29 @@ public class PlayerSetup : NetworkBehaviour {
 
         string _netID = GetComponent<NetworkIdentity>().netId.ToString();
         player _player = GetComponent<player>();
-
         GameManager.RegisterPlayer(_netID, _player);
     }
 
 
     private void OnDisable()
     {
-        if (sceneCam != null)
+        if (Camera.main.gameObject != null)
         {
-            sceneCam.gameObject.SetActive(true);
+            Camera.main.gameObject.SetActive(true);
             GameManager.UnRegisterPlayer(transform.name);
         }
     }
 
     private void DisableComponents()
     {
-            
-                for (int i = 0; i < Disable.Length; i++)
-                {
-                    Disable[i].enabled = false;
-                }
-            
-
-            
-            
-                
-            
+        for (int i = 0; i < Disable.Length; i++)
+        {
+            Disable[i].enabled = false;
         }
+    }
     
     private void AssignRemoteLayer()
     {
         gameObject.layer = LayerMask.NameToLayer(remoteLayerName);
     }
-
 }
-
-
-

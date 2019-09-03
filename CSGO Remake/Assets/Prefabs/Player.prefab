@@ -587,7 +587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapon:
     name: Glock 18
-    damage: 20
+    damage: 40
     range: 100
   sceneCam: {fileID: 0}
   hp: {fileID: 0}
@@ -666,9 +666,7 @@ MonoBehaviour:
   - {fileID: 114539922256316298}
   - {fileID: 114192397329252934}
   - {fileID: 114162837945793148}
-  - {fileID: 0}
-  - {fileID: 114086785885228876}
-  sceneCam: {fileID: 0}
+  - {fileID: 114557553894153072}
   remoteLayerName: RemotePlayer
 --- !u!114 &114331236810119538
 MonoBehaviour:
@@ -741,6 +739,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3407205dcb6dbe144979cbf1db64347f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
+  disableOnDeath:
+  - {fileID: 114192397329252934}
+  - {fileID: 114162837945793148}
 --- !u!114 &114593885363646644
 MonoBehaviour:
   m_ObjectHideFlags: 1

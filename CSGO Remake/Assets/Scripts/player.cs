@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class player : NetworkBehaviour {
+
     [SyncVar]
     private bool _isDead = false;
-    public bool isDead
+    public bool IsDead
     {
         get { return _isDead; }
         protected set { _isDead = value; }
@@ -29,16 +30,14 @@ public class player : NetworkBehaviour {
         {
             wasEnabled[i] = disableOnDeath[i].enabled;  
         }
-
-
         SetDefaults();
-
     }
+
 
     [ClientRpc]
     public void RpcTakeDamage(int _amount)
     {
-        if (isDead)
+        if (IsDead)
             return;
 
         currentHealth -= _amount;
@@ -53,7 +52,7 @@ public class player : NetworkBehaviour {
 
     private void Die()
     {
-        isDead = true;
+        IsDead = true;
 
         for (int i = 0; i < disableOnDeath.Length; i++)
         {
@@ -67,14 +66,25 @@ public class player : NetworkBehaviour {
             col.enabled = false;
         }
 
-        Debug.Log(transform.name + " is dead!" );
 
-        //Respawn
+       StartCoroutine(Respawn());
     }
+
+
+        IEnumerator Respawn()
+        {
+        yield return new WaitForSeconds(5f);
+
+        SetDefaults();
+        Transform spawnPoint = NetworkManager.singleton.GetStartPosition();
+        transform.position = spawnPoint.position;
+        transform.rotation = spawnPoint.rotation;
+    }
+    
 
     public void SetDefaults()
     {
-        isDead = false;
+        IsDead = false;
 
         for (int i = 0; i < disableOnDeath.Length; i++)
         {
@@ -82,12 +92,10 @@ public class player : NetworkBehaviour {
         }
         currentHealth = maxHealth;
 
-        Collider col = GetComponent<Collider>();
+        Collider _col = GetComponent<Collider>();
 
-        if(col != null)
-        {
-            col.enabled = true;
-        }
+            _col.enabled = true;
+     
         
     }
 }
