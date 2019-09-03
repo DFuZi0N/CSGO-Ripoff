@@ -9,6 +9,8 @@ public class PlayerSetup : NetworkBehaviour {
     private Behaviour[] Disable;
     [SerializeField]
     string remoteLayerName = "RemotePlayer";
+    [SerializeField]
+    Camera cam;
 
     private void Start()
     {
@@ -20,9 +22,9 @@ public class PlayerSetup : NetworkBehaviour {
         else
         {
             
-            if (Camera.main.gameObject != null)
+            if (cam.gameObject != null)
             {
-                Camera.main.gameObject.SetActive(false);
+                cam.gameObject.SetActive(false);
             }
         }
         GetComponent<player>().Setup();
@@ -40,9 +42,9 @@ public class PlayerSetup : NetworkBehaviour {
 
     private void OnDisable()
     {
-        if (Camera.main.gameObject != null)
+        if (cam.gameObject != null)
         {
-            Camera.main.gameObject.SetActive(true);
+           cam.gameObject.SetActive(true);
             GameManager.UnRegisterPlayer(transform.name);
         }
     }

@@ -6,9 +6,9 @@ public class PlayerShoot : NetworkBehaviour {
 
     private const string PTag = "Player";
 
-    public PlayerWeapons weapon;
+    private PlayerWeapons currentWeapon;
+    private WeaponManager WeaponManager;
     public GameObject sceneCam;
-    public UniversalHP hp;
 
     [SerializeField]
     private Camera cam;
@@ -20,16 +20,33 @@ public class PlayerShoot : NetworkBehaviour {
 
     private void Start()
     {
+        WeaponManager = GetComponent<WeaponManager>();
         locked = true;
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Shoot();
+        currentWeapon = WeaponManager.getCurrentWeapon();
+
+        if (Input.GetMouseButtonDown(0)) {
+            if (currentWeapon.fireRate <= 0)
+            {
+                Shoot();
+            }
+            else
+            {
+                    InvokeRepeating("Shoot", 0f, 1f / currentWeapon.fireRate);   
+            }
         }
 
+        else if (Input.GetMouseButtonUp(0))
+        {
+            CancelInvoke("Shoot");
+        }
+            
+            
+            
+          
         if (locked)
 
         {
@@ -38,9 +55,9 @@ public class PlayerShoot : NetworkBehaviour {
                 Cursor.lockState = CursorLockMode.None;
                 locked = false;
             }
-            else if (!locked)
+            else if (Input.GetMouseButtonDown(0))
             {
-                if(Input.GetMouseButtonDown(0))
+                if (!locked)
                 {
                     Cursor.lockState = CursorLockMode.Locked;
                     locked = true;
@@ -49,15 +66,22 @@ public class PlayerShoot : NetworkBehaviour {
         }
     }
 
+    
+
+
+
     [Client] 
     void Shoot()
     {
+
+        Debug.Log("SHOOT!");
+
         RaycastHit hit;
-        if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, weapon.range, mask))
+        if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, currentWeapon.range, mask))
         {
             if(hit.collider.tag == PTag)
             {
-                CmdPlayerShot(hit.collider.name, weapon.damage);
+                CmdPlayerShot(hit.collider.name, currentWeapon.damage);
             }
 
             Debug.Log(hit.distance + hit.collider.name);    
@@ -68,7 +92,7 @@ public class PlayerShoot : NetworkBehaviour {
     public void CmdPlayerShot(string _PlayerID, int dmg)
     {
 
-        dmg = weapon.damage;
+        dmg = currentWeapon.damage;
         Debug.Log(_PlayerID + "Has Been Shot!");
 
         player _Player = GameManager.GetPlayer(_PlayerID);
